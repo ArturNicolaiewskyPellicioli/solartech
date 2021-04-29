@@ -8,18 +8,19 @@ xsolartech.surge.sh
 
 ### Para rodar na sua máquina
 
--Clonar o repositório
--Yarn install ou npm install
--yarn start ou npm start
+- Clonar o repositório
+- Yarn install ou npm install
+- yarn start ou npm start
 
 ### Funcionalidades:
 
 - Adicionar clientes
 - Consultar dados de clientes
-- Ser notificado a cada cliente adicionado
+- Ser notificado por email a cada cliente adicionado
 - Salvar dados dos clientes no local
 - Editar e excluir clientes
 - Buscar endereço completo pelo CEP
+- Responsividade para desktop e mobile
 
 ### Tecnologias:
 
