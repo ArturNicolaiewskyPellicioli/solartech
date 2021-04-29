@@ -46,14 +46,14 @@ function Home() {
   },[])
   
 
-  const listClientsFiltered = clients.filter(client => client.name.toLowerCase().includes(form.searchClient.toLowerCase()))
+  const listClientsFiltered = clients?.filter(client => client.name.toLowerCase().includes(form.searchClient.toLowerCase()))
 
   return (
     <HomeContainer>
       <h1>Clientes</h1>
       <input placeholder="Busque pelo nome" id="searchClient" name="searchClient" value={form.searchClient} onChange={onChange}/>
       
-      {clients ? listClientsFiltered.map((client) => {
+      {clients && clients.length != 0 ? listClientsFiltered.map((client) => {
           return (
             <div key={client.name} onClick={() => requests.onClickClient(client.name)}>
               <span>{client.name}</span>

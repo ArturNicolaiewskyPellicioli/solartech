@@ -131,7 +131,7 @@ const DataProvider = (props) => {
     setPage(4)
     const listClients = JSON.parse(localStorage.getItem("clients"))
 
-    const clientIndex = listClients.findIndex(clienteInfo => clienteInfo.name === client)
+    const clientIndex = listClients?.findIndex(clienteInfo => clienteInfo.name === client)
     setCurrentClientIndex(clientIndex)
     setCurrentClient(listClients[clientIndex])
 

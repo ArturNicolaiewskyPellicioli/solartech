@@ -24,7 +24,7 @@ function DadosPessoais() {
   const onClickNextPage = (event) => {
     event.preventDefault()
 
-    if (clients.findIndex(client => client.name.toLowerCase().includes(form.name.toLowerCase())) === -1) {
+    if (!clients || clients.findIndex(client => client.name.toLowerCase().includes(form.name.toLowerCase())) === -1) {
       
       requests.nextPage()
       setters.setName(form.name)

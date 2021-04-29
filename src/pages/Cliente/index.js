@@ -195,9 +195,9 @@ function Cliente() {
           </form>
           
             <div className="button-container-box">
-                <BotaoNavegacao title="X" clickFunction={requests.deleteClient}/>
-              {!states.editMode && <BotaoNavegacao title="E" clickFunction={requests.toggleEditMode} />}
-              {states.editMode && <BotaoNavegacao title="S" clickFunction={onClickSaveEdit} />}
+                <BotaoNavegacao title="Excluir" clickFunction={requests.deleteClient}/>
+              {!states.editMode && <BotaoNavegacao title="Editar" clickFunction={requests.toggleEditMode} />}
+              {states.editMode && <BotaoNavegacao title="Salvar" clickFunction={onClickSaveEdit} />}
             </div>
           
         <ToastContainer/>
