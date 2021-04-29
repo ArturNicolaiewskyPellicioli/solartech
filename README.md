@@ -2,6 +2,16 @@
 
 Neste projeto desenvolvi um site para gerenciar clientes.
 
+### Link para a build do site
+
+xsolartech.surge.sh
+
+### Para rodar na sua máquina
+
+-Clonar o repositório
+-Yarn install ou npm install
+-yarn start ou npm start
+
 ### Funcionalidades:
 
 - Adicionar clientes
